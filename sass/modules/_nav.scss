@@ -1,0 +1,115 @@
+.sidebarC { 
+    background-color:#505050; 
+    color: white;
+    position:relative;
+}
+
+.sidebarC header { 
+    position:relative;
+    background-color: #690800;
+    height:110px; 
+    font-size:1.25rem;
+    margin:0 -15px;
+}
+
+.sidebarC header p { 
+    display:inline;
+    padding-left:10px;
+}
+
+.sNav { font-size:1.45rem; }
+.sNav ul { margin: 5px -15px 0; }
+.sNav ul li { margin-top:13px; padding:12px 0 12px 14%; }
+.sNav ul li:hover { background-color:#333; cursor:pointer; color:white; }
+.sNav i, .sNav span { margin-right:10px;}
+
+.yellowBoxNav {
+    position:relative;
+    display:inline-block;
+    /*float:right;*/
+    margin-right:30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color:#f3d83f;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 45px;
+    color:white;
+    z-index: 25;
+}
+
+.yellowBoxNav span { position:relative; top: 8px; font-size:3rem; }
+
+.dropdown-menu { padding-top:0; }
+.dropdown-menu .circleI { 
+    width:30px; height:30px;
+     -moz-border-radius:50%; 
+     border-radius:50%; 
+     background-color:#eff3f4; 
+     color:#ccc; 
+     text-align:center;
+     font-size:1.7rem;
+     margin:0 10px;
+     padding-top:5px;
+}
+.dropdown-menu li { position:relative; margin-right:0; /*padding:10px 0;*/}
+.dropdown-menu li:hover .emptyCircle {
+    background-color:#fff;
+}
+.dropdown-menu li:hover .circleI {
+    background-color:#fff;
+}
+
+.listText { position:absolute; top:7px; left:60px; font-size:1.5rem; line-height:1.5rem; }
+.listText span { color:red;font-size:1.5rem; }
+.topPanel { width:100%; height:50px; background-color:#383838; position:relative; }
+.topPanel i { position:absolute; top:-20px; left:80%; font-size:3rem; color:#383838; }
+.topPanel p { padding:15px 0 0 20px;  }
+
+.discussionDrop { margin:10px 0; width:200px; padding-bottom:0; }
+
+.dropdown-menu { margin-top:25px; }
+.dropdown-menu-right { right:-15px; }
+
+#mBubble { 
+    position:absolute; 
+    background-color:#853c37; 
+    width:15px; height:15px; 
+    font-size:1rem; 
+    left:25px; 
+    top:-3px; 
+}
+
+.mainC_nav { position:absolute; right:0; margin-right:30px; margin-top:35px; z-index:100; cursor:pointer;}
+.mainC_nav li { position:relative; margin-right:5px; }
+.mainC_nav span { font-size:3rem; color:#b7bbc2; }
+
+#messageBadge {
+    position:relative; 
+    background-color:#853c37;  
+    font-size:1rem; 
+    left:10px;
+    top:-2px; 
+    width:30; 
+    height:30;
+    text-align:center; 
+}
+
+.emptyCircle {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-color:#eff3f4;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;  
+    margin-left:10px; 
+}
+
+.dropdown-menu .divider { margin:0; }
+
+.dropdown-menu > li > a { padding:10px 0; }
+
+.navIndicator { position:relative; height:8px; background-color:#f3d83f; width:210px; }

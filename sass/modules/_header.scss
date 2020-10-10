@@ -1,0 +1,24 @@
+#topPanel { margin:0; position:relative; }
+
+.clLogo { 
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left:40px;
+}
+
+.mainHead {
+    height:110px;
+    background-color: #ffffff;
+}
+
+.profileImg {
+    border: 3px solid white;
+}
+
+.imgText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left:12%;
+}
