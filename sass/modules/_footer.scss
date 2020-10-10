@@ -1,0 +1,40 @@
+.mainCfooter {
+    margin-top:200px;
+    padding-top:130px;
+    background-color: #444444;
+}
+
+footer h4 {margin:0;}
+footer { background-color: #333; color:white; }
+
+.footerContent li {
+    /*display:inline-block;
+    margin-right:50px;*/
+    max-width:250px;
+}
+
+.footerContent h3 { 
+    font-family:"Lato";
+    font-weight:300;
+    font-size:2.25rem;
+}
+
+.iconHead { position:relative; left:-10px; }
+
+.childList { 
+    font-weight:300;
+    list-style-type:none; 
+    padding-left:20px;
+    font-size:12.5px;
+}
+
+.childList li { padding-top:10px; }
+
+.firstHeading { margin:0; }
+.firstHeader { margin-top:0; margin-bottom:10px; }
+
+.tempLink { text-decoration:underline; }
+.collapseLi { padding-top:5px;}
+
+.footerContent { position:relative; left:7.5%; padding:0; width:90%; }
+.footerStuff { padding-bottom:100px; }

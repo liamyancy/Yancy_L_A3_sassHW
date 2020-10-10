@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eEdu Student Portal * SASS Rebuild</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- this is the existing stylesheet - NOT created with SASS. Use this as a reference -->
+  <!-- <link rel="stylesheet" href="css/custom.css"> -->
+  <link rel="stylesheet" href="css/master.css">
+
+  <!-- rebuild the stylesheet with SASS using modules. When you're done, link in the new compiled CSS file -->
+  <!-- <link rel="stylesheet" href="css/path-to-compiled-sheet.css" -->
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="js/respond.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <!-- Sidebar content -->
+      <div class="col-sm-2 sidebarC">
+        <header class="sideHead">
+          <div class="imgText">
+            <img src="images/eEdu_profile.jpg" class="img-circle profileImg" alt="profile pic">
+            <p>ADMIN</p>
+          </div>
+        </header>
+
+        <!-- side nav -->
+        <nav class="sNav">
+          <ul class="list-unstyled text-uppercase text-muted">
+            <li><i class="fa fa-home"></i>Dashboard</li>
+            <li><i class="fa fa-folder-o"></i>File Manager</li>
+            <li><span class="glyphicon glyphicon-envelope"></span>Email</li>
+            <li><i class="fa fa-newspaper-o"></i>News</li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End sidebar content -->
+
+      <!-- Main content -->
+      <div class="col-sm-10 bodyC">
+        <header class="mainHead">
+          <img class="clLogo" src="images/eEdu_ANUC_logo.jpg" alt="school logo">
+          <!-- Single button -->
+          <div class="dropdown yellowBoxNav">
+            <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-align-justify"></span>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-right discussionDrop" role="menu" aria-labelledby="dropdownMenu1">
+              <li class="text-muted">
+                <div class="topPanel"><i class="fa fa-caret-up"></i>
+                  <p>Control Centre</p>
+                </div>
+              </li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                    class="circleI fa fa-user"></i>Profile</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                    class="circleI fa fa-sliders fa-rotate-90"></i>Account</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                    class="circleI fa fa-power-off"></i>Log Out</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- Top Panel -->
+        <section id="topPanel" class="row">
+          <h2 class="hidden">Top Content</h2>
+          <!-- professor panel (absolute) -->
+          <div class="col-sm-12 bannerContainer">
+            <img class="img-responsive" src="images/eEdu_mainImg.jpg" alt="oil and gas banner" id="topImg">
+          </div>
+          <div class="profPanel panel panel-default">
+            <div class="profPanelText">
+
+              <!-- <h2 class="hidden">Prof Panel</h2> -->
+
+              <!-- REPLACE THIS CONTENT WITH DATA PULLED IN FROM classData.js -->
+
+              <p class="text-muted"><span class="text-primary"></span></p>
+              <p></p>
+              <!-- class times go here -->
+              <ul class="list-inline"></ul>
+
+              <!-- END DYNAMIC DATA -->
+            </div>
+
+            <img src="images/eEdu_prof.jpg" alt="prof image" class="img-circle profileImg">
+          </div>
+        </section>
+
+        <!-- STOP HERE - YOUR SASS REBUILD IS DONE -->
+
+        <!-- Bottom Panel -->
+        <section id="bottomPanel" class="row">
+          <h2 class="hidden">Bottom Content</h2>
+
+          <!-- course nav -->
+          <ul class="list-unstyled list-inline mainC_nav text-muted">
+            <li><span class="glyphicon glyphicon-volume-up"></span></li>
+            <li>
+              <div class="dropdown">
+                <span class="glyphicon glyphicon-comment dropdown-toggle" id="dropdownMenu1"
+                  data-toggle="dropdown"></span><span id="mBubble" class="badge">!</span>
+                <ul class="dropdown-menu dropdown-menu-right discussionDrop" role="menu"
+                  aria-labelledby="dropdownMenu1">
+                  <li class="text-muted">
+                    <div class="topPanel"><i class="fa fa-caret-up"></i>
+                      <p>MESSAGES<span id="messageBadge" class="badge">10</span></p>
+                    </div>
+                  </li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="emptyCircle"></span>
+                      <p class="listText"><span>some</span><br>text</p>
+                    </a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="emptyCircle"></span>
+                      <p class="listText"><span>some</span><br>text</p>
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+            <li><span class="glyphicon glyphicon-search"></span></li>
+          </ul>
+          <!-- course info -->
+          <div class="row courseStuff">
+            <div class="col-sm-11">
+              <article class="courseInfo">
+
+                <!-- REPLACE ALL OF THIS CONTENT WITH DATA FROM classData.js -->
+                <h2></h2>
+                <hr>
+                <h3>Course Description:</h3>
+                <p></p>
+                <!-- END DYNAMIC DATA -->
+              </article>
+            </div>
+          </div>
+
+          <!-- week by week -->
+          <div class="row lowerPanelNav">
+            <section class="col-sm-11 weeklySched ">
+              <h2 class="hidden">Schedule</h2>
+
+              <!-- loop through the course content and build the nav -->
+              <ul class="list-unstyled list-inline"></ul>
+              <!-- end dynamic nav -->
+
+              <div class="navIndicator"></div>
+          </div>
+
+          <!-- course details table -->
+          <div class="row calendarStuff">
+            <div class="col-sm-11 bottomCalendar">
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                  <div class="dayBox">
+                    <i class="fa fa-caret-up"></i>
+                    <p>week</p>
+                    <p class="dayMarker">1</p>
+                    <i class="fa fa-caret-down"></i>
+                  </div>
+                </div>
+
+                <table class="col-sm-10">
+                  <hr>
+                  <thead>
+                    <tr>
+                      <th class="stretchCell">Lecture Materials</th>
+                      <th class="wideCell"></th>
+                      <th>Last Updated</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Class 1 - Pre-Lecture</td>
+                    <td><span class="glyphicon glyphicon-cloud-download"></span><span><i
+                          class="fa  fa-facebook-square fbActive"></i></span><span><i class="fa fa-twitter"></i></span>
+                    </td>
+                    <td>September 18, 2014</td>
+                    <td class="locked">Locked</td>
+                  </tr>
+                  <tr>
+                    <td>Class 1 - Post-Lecture</td>
+                    <td><span class="glyphicon glyphicon-cloud-download"></span><span><i
+                          class="fa  fa-facebook-square"></i></span><span><i class="fa fa-twitter"></i></span></td>
+                    <td>September 18, 2014</td>
+                    <td class="viewed">Viewed</td>
+                  </tr>
+                  <tr>
+                    <td>Class 2 - Pre-Lecture</td>
+                    <td><span class="glyphicon glyphicon-cloud-download"></td>
+                    <td>September 18, 2014</td>
+                    <td class="notViewed">Not Viewed</td>
+                  </tr>
+                  <tr>
+                    <td>Class 2 - Post-Lecture</td>
+                    <td><span class="glyphicon glyphicon-cloud-download"></td>
+                    <td>September 18, 2014</td>
+                    <td class="locked">Locked</td>
+                  </tr>
+                  <tr>
+                    <td>Class 2 - Additional Topics</td>
+                    <td><span class="glyphicon glyphicon-cloud-download"></td>
+                    <td>September 18, 2014</td>
+                    <td class="notViewed">Not Viewed</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <footer class="mainCfooter">
+            <div class="row footerStuff">
+              <div class="col-sm-12 footerContent center-block">
+                <div class="col-sm-4">
+                  <ul class="list-unstyled firstHeading">
+                    <li>
+                      <h3 class="firstHeader"><i class="fa fa-share-alt-square iconHead"></i>Share Us With Others</h3>
+                    </li>
+                    <li>
+                      <ul class="childList">
+                        <li><strong>Donec sed odio dui.</strong> Cras mattis consectetur purus sit amet fermentum.
+                          Vivamus sagittis lacus vel augue laoreet rutrum.</li>
+                        <li><img src="images/eEdu_facebookGlyph.png" alt="Facebook Share Icon"></li>
+                        <li><img src="images/eEdu_twitterGlyph.png" alt="Twitter Share Icon"></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-4">
+                  <ul class="list-unstyled">
+                    <li>
+                      <h3 class="firstHeader"><i class="fa fa-chain fa-flip-horizontal iconHead"></i>Other Links</h3>
+                    </li>
+                    <li>
+                      <ul class="childList">
+                        <li><u>All Nations Full Gospel Church</u></li>
+                        <li><u>All Nations International Development Agency</u></li>
+                        <li><u>Women's Development Centre</u></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-4">
+                  <ul class="list-unstyled">
+                    <li>
+                      <h3 class="firstHeader"><i class="fa fa-map-marker iconHead"></i>Our Address</h3>
+                    </li>
+                    <li>
+                      <ul class="childList">
+                        <li>Opposite Kumasi Station, Koforidua<br>and near the SIC building.<br>P.O.Box Kf, 1908,
+                          Koforidua<br>Email: info@anuc.edu.gh<br>/admissions@anuc.edu.gh</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </footer> <!-- end main footer -->
+        </section>
+      </div> <!-- end right content (bodyC) -->
+    </div><!-- end main content (master row) -->
+
+  </div> <!-- end wrapper container -->
+
+  <!-- javascript includes -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="data/classData.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
